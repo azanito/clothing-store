@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+#site-header {
+    background: linear-gradient(135deg, #000, #4a4a4a);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+}
+
+.site-title {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    line-height: 1.2;
+}
+
+#site-header:hover {
+    background: linear-gradient(135deg, #333, #666);
+}
+/* Catalog Section */
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    text-align: center;
+}
+
+.product-title {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product-price {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Image Styling */
+.image-thumbnail {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Footer */
+.footer-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    margin-top: 20px;
+}
+
+.star-rating {
+    direction: rtl;
+    font-size: 24px;
+}
+
+.star-rating .fa {
+    color: #ddd;
+    cursor: pointer;
+}
+
+.star-rating .fa.checked {
+    color: #f39c12;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+    transition: background-color 0.5s ease;
+}
+
+/* Стили для заголовка */
+#site-header {
+    background: linear-gradient(135deg, #000, #4a4a4a);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+}
+
+.site-title {
+    margin: 0;
+    font-size: 3.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Стили для навигации */
+#main-nav {
+    background-color: #fff;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    box-shadow: none;
+}
+
+/* Стили для ссылок навигации */
+.nav-link {
+    color: #000;
+    padding: 8px 20px; /* Уменьшено значение padding */
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0 5px; /* Уменьшено значение margin */
+    position: relative;
+    transition: color 0.3s ease;
+    font-size: 1.2em;
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Эффект при наведении */
+.nav-link:hover {
+    color: #000;
+    transform: scale(1.05);
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Уменьшили отступы между пунктами навигации */
+#main-nav .nav-item {
+    margin-left: 10px;  /* Уменьшили отступы */
+    margin-right: 10px; /* Уменьшили отступы */
+}
+

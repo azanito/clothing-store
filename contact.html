@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts - A&A Clothing Store</title>
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+    <header id="site-header" class="bg-dark text-white text-center py-3">
+        <h1 class="site-title">A&A Clothing Store</h1>
+    </header>
+
+    <nav id="main-nav" class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="main.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="shop.html">Catalog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <section id="dynamic-message-section" class="text-center mt-3">
+        <p id="dynamic-message-top" class="font-weight-bold">Welcome to A&A Clothing Store!</p>
+    </section>
+
+    <main class="container mt-5">
+        <article class="contact-image text-center mb-5">
+            <img src="images_abylay/astana.jpg" id="image-for-contact" class="img-fluid mx-auto d-block">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need assistance, feel free to reach out to us using the contact form below.</p>
+        </article>
+
+        <section id="features" class="mt-5 row justify-content-between">
+            <div class="col-md-4 text-center">
+                <h3>Current Time</h3>
+                <div id="current-time" class="display-4 mb-3">--:--:--</div>
+                <button id="showTimeBtn" class="btn btn-secondary btn-lg">Show Current Time</button>
+            </div>
+
+            <div class="col-md-4 text-center">
+                <h3>Special Offers</h3>
+                <button id="animateBtn" class="btn btn-danger">Check Special Offers</button>
+                <div id="special-offers-container"></div>
+            </div>
+
+            <div class="col-md-4 text-center">
+                <h3>Get Notified</h3>
+                <button id="playSoundBtn" class="btn btn-info">Play Notification Sound</button>
+            </div>
+        </section>
+
+        <section class="mt-5 text-center">
+            <button id="toggleThemeBtn" class="btn btn-dark">Switch to Night Mode</button>
+        </section>
+
+        <section class="mt-5 text-center">
+            <p id="dynamic-message">We'd love to hear from you!</p>
+            <button id="updateMessageBtn" class="btn btn-primary">Need help? Contact our support team.</button>
+        </section>
+
+        <section class="contact-form-section row mt-5">
+            <div class="col-md-6 offset-md-3">
+                <h3 class="text-center mb-4">Get in Touch With Us!</h3>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="interest">Select Interest:</label>
+                        <select id="interest" name="interest" class="form-control">
+                            <option value="clothing">Clothing</option>
+                            <option value="denim">Denim</option>
+                            <option value="shoes">Shoes</option>
+                            <option value="bags&accessories">Bags & Accessories</option>
+                            <option value="jewelry">Jewelry</option>
+                            <option value="gifts">Gifts</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" class="form-control" required></textarea>
+                    </div>
+                    <div id="error-messages" class="text-danger"></div> 
+                    <button type="submit" class="btn btn-primary btn-block btn-animate">Submit</button>
+                </form>
+                <div id="success-message" class="text-success mt-3" style="display: none;">Your message has been sent successfully!</div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="site-footer" class="bg-dark text-white text-center py-4 mt-5">
+        <p>Created by Slamzhanov Abylay, Orunbek Azan, 2024</p>
+    </footer>
+
+    <script src="app_contact.js"></script>
+</body>
+</html>
