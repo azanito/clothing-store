@@ -121,12 +121,4 @@ An interactive background color feature allows users to change the look and feel
 - **Mobile Responsiveness**: Additional improvements will ensure flawless display on smartphones and tablets.
 
 
----
-
-## GitHub Repository
-
-[GitHub Repository Link](https://github.com/abylsliam44/a-a_store)
-
----
-
 
